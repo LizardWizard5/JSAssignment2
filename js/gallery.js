@@ -28,13 +28,15 @@ function Image(smallImgUrl, description) {//When creating the object, call this 
    styler(objId);
  }
 
- function styler(imgId){//Changes the grayscale of the selected image to 0% but first sets all the small images grayscale to 100% so that the previous selected image goes back to gray.
+ function styler(imgId){//Changes the grayscale of the selected image to 0% but first sets all the small images grayscale to 100% so that the previous selected image goes back to gray. Also does the same thing with the border
+  // making the border of the selected image dotted and makes all the other images borders solid.
   imgId=imgId+1;
   for(let x =1; x<imgs.length; x++){
     imgs[x].style.filter = "grayscale(100%)";
-    
+    imgs[x].style.borderStyle = "solid";
   }
   imgs[imgId].style.filter = "grayscale(0%)";
+  imgs[imgId].style.borderStyle = "dotted";
  }
 
  for (let x = 1; x<imgs.length;x++){//Creates a object for each of the images elemnts in the list. Populating the object vars with the src and alt attribute contents of the image element.
