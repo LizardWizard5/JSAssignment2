@@ -29,13 +29,19 @@ figcaption{/*Centers the text and changes the size*/
     
 }
 
-li > img{/*Adds spacing between each image and adds a 10 pixel border*/
+li > img{/*Adds grayscale, spacing between each image and adds a 10 pixel border*/
     margin-left: 20px;
     margin-right: 20px;
     border-style: solid;
     border-radius: 10px;
     border-width: 10px;
     border-color: #f4f4f4;
+
+    filter: grayscale(100%);
+}
+/* Sets the first small image to 0% grayscale because when the page loads that image is already chosen*/
+li:nth-of-type(1) > img{
+    filter: grayscale(0%);
 }
 
 
