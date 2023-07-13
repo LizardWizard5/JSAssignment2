@@ -39,9 +39,10 @@ li > img{/*Adds grayscale, spacing between each image and adds a 10 pixel border
 
     filter: grayscale(100%);
 }
-/* Sets the first small image to 0% grayscale because when the page loads that image is already chosen*/
+/* Sets the first small image to 0% grayscale and border style to dotted because when the page loads that image is already chosen*/
 li:nth-of-type(1) > img{
     filter: grayscale(0%);
+    border-style: dotted;
 }
 
 
