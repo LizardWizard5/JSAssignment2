@@ -1,0 +1,44 @@
+html{/*Adding a background color to the page*/
+    background-color: #03a9f4;
+}
+
+li{/*Removing the bullet point next to the list*/
+    list-style-type: none;
+    
+}
+ul{/*Displays flex so each li and display in a row. Positions it in the center with margin auto and adds some spacing to the top and removing spacing to the left*/
+    display: flex;
+    margin: auto;
+    margin-top: 10px;
+    padding-left: 0%;
+}
+
+section{/*Sets the section to display flex and makes the flex direction go in column so that things can be centered*/
+    display: flex;
+    flex-direction: column;
+}
+
+figure{/*Sets the size of the figure to fit the image and centers it with margin auto*/
+    width: fit-content;
+    margin: auto;
+}
+figcaption{/*Centers the text and changes the size*/
+    font-size: 30px;
+    text-align: center;
+    
+    
+}
+
+li > img{/*Adds spacing between each image and adds a 10 pixel border*/
+    margin-left: 20px;
+    margin-right: 20px;
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 10px;
+    border-color: #f4f4f4;
+}
+
+
+h1, figcaption{/* Sets the font color of the h1 in the top left and the figure caption(image description)*/
+    color: #f4f4f4;
+}
